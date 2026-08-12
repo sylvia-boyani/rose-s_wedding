@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --baby-yellow: #F6E99A;
+  --soft-yellow: #FFF8CF;
+  --white: #FFFDF8;
+  --black: #111111;
+  --soft-black: #1C1C1C;
+  --gold: #C9AA55;
+  --muted: #77736A;
+
+  --heading-font: "Cormorant Garamond", serif;
+  --body-font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  background: var(--white);
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
