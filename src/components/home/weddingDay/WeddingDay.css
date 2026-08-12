@@ -1,0 +1,350 @@
+/* =========================================
+   WEDDING DAY
+========================================= */
+
+.wedding-day {
+  padding: 130px 0;
+
+  background: var(--soft-yellow);
+
+  overflow: hidden;
+}
+
+.wedding-day-container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.wedding-day-header {
+  text-align: center;
+
+  margin-bottom: 80px;
+}
+
+.wedding-day-header > p:first-child {
+  color: var(--gold);
+
+  font-size: 10px;
+
+  letter-spacing: 5px;
+}
+
+.wedding-day-header h2 {
+  margin-top: 15px;
+
+  font-family: var(--heading-font);
+
+  font-size: clamp(65px, 9vw, 110px);
+
+  line-height: 0.8;
+
+  font-weight: 300;
+}
+
+.wedding-day-header h2 span {
+  display: block;
+
+  color: #77736a;
+
+  font-style: italic;
+}
+
+.wedding-day-intro {
+  max-width: 450px;
+
+  margin: 35px auto 0;
+
+  color: var(--muted);
+
+  font-size: 12px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================
+   EVENT CARDS
+========================================= */
+
+.events-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+.event-card {
+  position: relative;
+
+  padding: 70px 55px;
+
+  min-height: 520px;
+
+  overflow: hidden;
+}
+
+.event-card.ceremony {
+  background: var(--white);
+}
+
+.event-card.reception {
+  background: var(--black);
+
+  color: var(--white);
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.event-number {
+  position: absolute;
+
+  top: 30px;
+  right: 35px;
+
+  font-family: var(--heading-font);
+
+  font-size: 18px;
+
+  color: var(--gold);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.event-icon {
+  font-family: var(--heading-font);
+
+  font-size: 45px;
+
+  color: var(--baby-yellow);
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.event-label {
+  font-size: 9px;
+
+  letter-spacing: 4px;
+
+  color: var(--gold);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.event-card h3 {
+  margin: 18px 0 35px;
+
+  font-family: var(--heading-font);
+
+  font-size: 55px;
+
+  line-height: 0.9;
+
+  font-weight: 300;
+}
+
+.event-card h3 em {
+  display: block;
+
+  font-style: italic;
+
+  color: #8a867c;
+}
+
+.reception h3 em {
+  color: var(--baby-yellow);
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  padding-left: 20px;
+
+  border-left: 1px solid var(--baby-yellow);
+}
+
+.event-details strong {
+  font-family: var(--heading-font);
+
+  font-size: 28px;
+
+  font-weight: 400;
+}
+
+.event-details span {
+  font-size: 11px;
+
+  line-height: 1.7;
+
+  color: var(--muted);
+}
+
+.reception .event-details span {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================
+   LOCATION LINK
+========================================= */
+
+.event-card > a {
+  display: inline-block;
+
+  margin-top: 30px;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  border-bottom: 1px solid currentColor;
+
+  padding-bottom: 5px;
+}
+
+
+/* =========================================
+   SCHEDULE
+========================================= */
+
+.wedding-schedule {
+  margin-top: 110px;
+
+  display: grid;
+
+  grid-template-columns: 0.7fr 1.3fr;
+
+  gap: 80px;
+
+  padding-top: 70px;
+
+  border-top: 1px solid rgba(17, 17, 17, 0.15);
+}
+
+.schedule-title span {
+  color: var(--gold);
+
+  font-size: 9px;
+
+  letter-spacing: 4px;
+}
+
+.schedule-title h3 {
+  margin-top: 15px;
+
+  font-family: var(--heading-font);
+
+  font-size: 55px;
+
+  font-weight: 400;
+}
+
+.schedule-list {
+  border-top: 1px solid rgba(17, 17, 17, 0.15);
+}
+
+.schedule-item {
+  display: grid;
+
+  grid-template-columns: 100px 1fr;
+
+  gap: 30px;
+
+  padding: 25px 0;
+
+  border-bottom: 1px solid rgba(17, 17, 17, 0.15);
+}
+
+.schedule-item time {
+  font-family: var(--heading-font);
+
+  font-size: 22px;
+
+  color: var(--gold);
+}
+
+.schedule-item h4 {
+  font-family: var(--heading-font);
+
+  font-size: 25px;
+
+  font-weight: 500;
+}
+
+.schedule-item p {
+  margin-top: 4px;
+
+  font-size: 10px;
+
+  color: var(--muted);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+  .wedding-day {
+    padding: 90px 0;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card {
+    min-height: auto;
+
+    padding: 55px 35px;
+  }
+
+  .event-card h3 {
+    font-size: 48px;
+  }
+
+  .wedding-schedule {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    margin-top: 80px;
+  }
+
+  .schedule-item {
+    grid-template-columns: 65px 1fr;
+
+    gap: 15px;
+  }
+
+}
