@@ -1,21 +1,22 @@
 .gifts {
   padding: 130px 0;
-
   background: var(--soft-yellow);
 }
 
 .gifts-container {
   width: 90%;
   max-width: 900px;
-
   margin: auto;
-
   text-align: center;
 }
 
+
+/* ==============================
+   HEADER
+============================== */
+
 .gifts-eyebrow {
   color: var(--gold);
-
   font-size: 9px;
   letter-spacing: 5px;
 }
@@ -29,7 +30,7 @@
 
   font-weight: 300;
 
-  line-height: .9;
+  line-height: 0.9;
 }
 
 .gifts h2 span {
@@ -41,18 +42,24 @@
 }
 
 .gifts-intro {
-  max-width: 450px;
+  max-width: 500px;
 
   margin: 35px auto 60px;
 
   color: var(--muted);
 
   font-size: 12px;
+
   line-height: 1.9;
 }
 
+
+/* ==============================
+   GIFT OPTIONS
+============================== */
+
 .gift-options {
-  border-top: 1px solid rgba(17,17,17,.15);
+  border-top: 1px solid rgba(17, 17, 17, 0.15);
 }
 
 .gift-option {
@@ -60,7 +67,7 @@
 
   grid-template-columns: 70px 1fr auto;
 
-  align-items: center;
+  align-items: start;
 
   gap: 30px;
 
@@ -68,20 +75,40 @@
 
   text-align: left;
 
-  border-bottom: 1px solid rgba(17,17,17,.15);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.15);
+
+  transition: padding 0.4s ease;
 }
+
+
+/* ==============================
+   NUMBER
+============================== */
 
 .gift-option > span {
   font-family: var(--heading-font);
 
   color: var(--gold);
+
   font-size: 18px;
+
+  padding-top: 3px;
+}
+
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+.gift-main {
+  min-width: 0;
 }
 
 .gift-option small {
   color: var(--gold);
 
   font-size: 7px;
+
   letter-spacing: 3px;
 }
 
@@ -93,7 +120,153 @@
   font-size: 32px;
 
   font-weight: 400;
+
+  line-height: 1.1;
 }
+
+
+/* ==============================
+   DETAILS
+============================== */
+
+.gift-details {
+  max-width: 500px;
+
+  margin-top: 22px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(17, 17, 17, 0.12);
+
+  animation: giftDetailsIn 0.35s ease;
+}
+
+@keyframes giftDetailsIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.gift-details p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 11px;
+
+  line-height: 1.9;
+}
+
+.gift-details p strong {
+  color: var(--black);
+
+  font-weight: 500;
+}
+
+.gift-note {
+  margin-top: 12px !important;
+
+  font-style: italic;
+
+  color: #77736a !important;
+}
+
+
+/* ==============================
+   M-PESA NUMBER
+============================== */
+
+.mpesa-number {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-top: 20px;
+
+  padding: 18px 20px;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  border-left: 2px solid var(--gold);
+}
+
+.mpesa-number small {
+  color: var(--gold);
+
+  font-size: 7px;
+
+  letter-spacing: 3px;
+}
+
+.mpesa-number strong {
+  margin-top: 5px;
+
+  font-family: var(--heading-font);
+
+  font-size: 25px;
+
+  font-weight: 400;
+
+  letter-spacing: 1px;
+}
+
+
+/* ==============================
+   HONEYMOON DETAILS
+============================== */
+
+.honeymoon-details {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-top: 20px;
+
+  padding: 18px 20px;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  border-left: 2px solid var(--gold);
+}
+
+.honeymoon-details small {
+  font-size: 7px;
+
+  letter-spacing: 3px;
+
+  color: var(--gold);
+}
+
+.honeymoon-details strong {
+  margin-top: 7px;
+
+  font-family: var(--heading-font);
+
+  font-size: 20px;
+
+  font-weight: 400;
+}
+
+.honeymoon-details span {
+  margin-top: 3px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+}
+
+
+/* ==============================
+   BUTTON
+============================== */
 
 .gift-option button {
   padding: 12px 20px;
@@ -102,20 +275,47 @@
 
   background: transparent;
 
+  color: var(--black);
+
   font-size: 8px;
+
   letter-spacing: 2px;
 
   cursor: pointer;
 
-  transition: .3s ease;
+  white-space: nowrap;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
 }
 
 .gift-option button:hover {
   background: var(--black);
+
   color: var(--white);
 }
 
-@media(max-width:600px) {
+
+/* ==============================
+   ACTIVE STATE
+============================== */
+
+.gift-option.active {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.gift-option.active > span {
+  color: var(--black);
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
 
   .gifts {
     padding: 90px 0;
@@ -123,10 +323,23 @@
 
   .gift-option {
     grid-template-columns: 40px 1fr;
+
+    gap: 15px;
   }
 
   .gift-option button {
     grid-column: 2;
+
     justify-self: start;
+
+    margin-top: 15px;
+  }
+
+  .gift-option h3 {
+    font-size: 28px;
+  }
+
+  .gift-details {
+    max-width: 100%;
   }
 }
