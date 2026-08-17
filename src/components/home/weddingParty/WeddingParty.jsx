@@ -10,14 +10,16 @@ const WeddingParty = () => {
       message: "What God cannot DO DOES NOT EXIST! 🥹❤️ From prayers to this beautiful moment. God has truly been faithful. So happy to witness you step into your forever. May your marriage be filled with God’s love, endless laughter, peace, friendship and beautiful memories. May you always choose each other, through every season. I’m so proud of you and excited for this new chapter, bestie! 🤍💍 Love you always!",
     },
     {
-      name: "Bridesmaid Two",
+      name: "Noelle Kate",
       role: "Bridesmaid",
-      image: "/images/bridesmaid-2.jpg",
+      image: "/images/kate.jpg",
+      message: "Rose, You have been to me as the flower you were named after is to a girl: a source of joy, comfort, beauty, love and those feelings that only one gifted a rose can describe. Of course as a rose does your thorns of correction come with love😂 Mostly, you came to me as a rose does, a gift from God in time of need. A well timed gift. I love you Rose. I can't wait to explore this life and see you in different seasons and phrases in life. Nyasaye nong'eyo ni nadwaro maua mar Rose e ngimana, omiyo nomia in.",
     },
     {
-      name: "Bridesmaid Three",
+      name: "Fridah Kamau",
       role: "Bridesmaid",
-      image: "/images/bridesmaid-3.jpg",
+      image: "/images/kadot.png",
+      message: "To the beautiful bride to be whose love language has always been calling us 'cows,' thank you for filling our lives with laughter, love, and unforgettable memories. As you begin this beautiful new chapter, I pray that your marriage is filled with joy, friendship, peace, and a love that grows stronger every day. Thank you for being the amazing, funny, and kind friend that you are. I love you dearly, and I couldn't be happier for you. Congratulations, beautiful.",
     },
   ];
 
