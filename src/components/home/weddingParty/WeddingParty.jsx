@@ -21,6 +21,12 @@ const WeddingParty = () => {
       image: "/images/kadot.png",
       message: "To the beautiful bride to be whose love language has always been calling us 'cows,' thank you for filling our lives with laughter, love, and unforgettable memories. As you begin this beautiful new chapter, I pray that your marriage is filled with joy, friendship, peace, and a love that grows stronger every day. Thank you for being the amazing, funny, and kind friend that you are. I love you dearly, and I couldn't be happier for you. Congratulations, beautiful.",
     },
+    {
+      name: "Rahab Joyce",
+      role: "Bridesmaid",
+      image: "/images/rahab.jpeg",
+      message: " I celebrate not just the beautiful bride you are about to be,but the beautiful woman you are. 🤍 May this new journey be filled with a love that grows deeper, laughter that never ends. I’m so happy for you Rossitta❤️. My girl, look at you! 😭😂 From all the random conversations, crazy laughs, unforgettable memories… to now watching you become a WIFE🥹❤️You deserve a love that makes you feel  seen❤️. You found the collar man you desired. 🥹😂. I love you ❤️ I’m so excited for this chapter and I cannot wait to watch your love story unfold. Now go be someone’s forever person",
+    },
   ];
 
   const groomsmen = [
