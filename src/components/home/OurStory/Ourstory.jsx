@@ -26,11 +26,11 @@ const OurStory = () => {
           <div className="story-image">
             <img
               src="/images/us.jpg"
-              alt="Rose and Ted"
+              alt="Amondi and Ajuma"
             />
 
             <div className="story-image-label">
-              R & T
+              A & A
             </div>
           </div>
 
@@ -61,7 +61,7 @@ const OurStory = () => {
             </p>
 
             <div className="story-signature">
-              Rose <span>&</span> Ted
+              Amondi <span>&</span> Ajuma
             </div>
 
           </div>

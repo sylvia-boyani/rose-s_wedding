@@ -48,7 +48,7 @@ const Countdown = () => {
     <section className="countdown" id="countdown">
 
       <div className="countdown-bg-letter">
-        R&T
+        A&A
       </div>
 
       <div className="countdown-content">

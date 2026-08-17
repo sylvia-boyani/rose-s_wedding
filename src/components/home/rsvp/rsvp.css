@@ -1,0 +1,235 @@
+.rsvp {
+  padding: 130px 0;
+
+  background: var(--black);
+  color: var(--white);
+}
+
+.rsvp-container {
+  width: 90%;
+  max-width: 800px;
+
+  margin: auto;
+}
+
+.rsvp-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.rsvp-header > p:first-child {
+  color: var(--baby-yellow);
+
+  font-size: 9px;
+  letter-spacing: 5px;
+}
+
+.rsvp-header h2 {
+  margin-top: 15px;
+
+  font-family: var(--heading-font);
+
+  font-size: clamp(70px, 9vw, 110px);
+
+  font-weight: 300;
+  line-height: .8;
+}
+
+.rsvp-header h2 span {
+  display: block;
+
+  color: var(--baby-yellow);
+
+  font-style: italic;
+}
+
+.rsvp-header > p:last-child {
+  max-width: 450px;
+
+  margin: 35px auto 0;
+
+  color: rgba(255,255,255,.55);
+
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+
+/* FORM */
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 35px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.form-group > label {
+  color: var(--gold);
+
+  font-size: 8px;
+  letter-spacing: 3px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  padding: 15px 0;
+
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+
+  background: transparent;
+
+  color: white;
+
+  outline: none;
+
+  font-family: var(--body-font);
+  font-size: 12px;
+
+  transition: .3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--baby-yellow);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group select option {
+  color: var(--black);
+}
+
+
+/* ATTENDANCE */
+
+.attendance-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.attendance-options label {
+  position: relative;
+  cursor: pointer;
+}
+
+.attendance-options input {
+  position: absolute;
+  opacity: 0;
+}
+
+.attendance-options span {
+  display: block;
+
+  padding: 18px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255,255,255,.2);
+
+  color: rgba(255,255,255,.65);
+
+  font-size: 9px;
+  letter-spacing: 1.5px;
+
+  transition: .3s ease;
+}
+
+.attendance-options input:checked + span {
+  background: var(--baby-yellow);
+
+  border-color: var(--baby-yellow);
+
+  color: var(--black);
+}
+
+
+/* BUTTON */
+
+.rsvp-form button {
+  margin-top: 10px;
+
+  padding: 18px;
+
+  border: none;
+
+  background: var(--baby-yellow);
+  color: var(--black);
+
+  font-size: 9px;
+  letter-spacing: 3px;
+
+  cursor: pointer;
+
+  transition: .3s ease;
+}
+
+.rsvp-form button:hover {
+  background: var(--white);
+}
+
+
+/* SUCCESS */
+
+.rsvp-success {
+  padding: 80px 30px;
+
+  text-align: center;
+
+  border: 1px solid rgba(246,233,154,.25);
+}
+
+.rsvp-success > span {
+  color: var(--baby-yellow);
+  font-size: 30px;
+}
+
+.rsvp-success h3 {
+  margin: 20px 0;
+
+  font-family: var(--heading-font);
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.rsvp-success p {
+  color: rgba(255,255,255,.6);
+  font-size: 12px;
+}
+
+.rsvp-success strong {
+  display: block;
+
+  margin-top: 30px;
+
+  font-family: var(--heading-font);
+  font-size: 28px;
+
+  color: var(--baby-yellow);
+}
+
+@media(max-width:600px) {
+
+  .rsvp {
+    padding: 90px 0;
+  }
+
+  .attendance-options {
+    grid-template-columns: 1fr;
+  }
+}

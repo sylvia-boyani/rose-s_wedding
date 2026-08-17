@@ -24,9 +24,9 @@ const Navbar = () => {
       <div className="navbar-container">
 
         <a href="#home" className="wedding-logo" onClick={closeMenu}>
-          <span>Rose</span>
+          <span>Amondi</span>
           <small>WEDS</small>
-          <span>Ted</span>
+          <span>Ajuma</span>
         </a>
 
         <nav className={`nav-menu ${menuOpen ? "open" : ""}`}>

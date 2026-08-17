@@ -14,11 +14,11 @@ const Hero = () => {
         </p>
 
         <div className="hero-names">
-          <h1>Rose</h1>
+          <h1>Amondi</h1>
 
           <span className="hero-ampersand">&</span>
 
-          <h1>Ted</h1>
+          <h1>Ajuma</h1>
         </div>
 
         <div className="hero-divider">

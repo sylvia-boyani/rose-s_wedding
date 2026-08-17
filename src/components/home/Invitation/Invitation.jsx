@@ -6,7 +6,7 @@ const Invitation = () => {
     <section className="invitation" id="invitation">
 
       <div className="invitation-decoration invitation-decoration-left">
-        R
+        A
       </div>
 
       <div className="invitation-content">
@@ -28,16 +28,16 @@ const Invitation = () => {
         </div>
 
         <p className="invitation-text">
-          Together with their families, Rose and Ted joyfully
+          Together with their families, Amondi and  joyfully
           invite you to celebrate the beginning of their
           forever as they exchange vows and begin a new
           chapter of their lives together.
         </p>
 
         <div className="invitation-names">
-          <span>Rose</span>
+          <span>Amondi</span>
           <i>&</i>
-          <span>Ted</span>
+          <span>Ajuma</span>
         </div>
 
         <div className="invitation-date">
@@ -51,7 +51,7 @@ const Invitation = () => {
       </div>
 
       <div className="invitation-decoration invitation-decoration-right">
-        T
+        A
       </div>
 
     </section>

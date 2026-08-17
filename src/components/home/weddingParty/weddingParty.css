@@ -1,0 +1,266 @@
+.wedding-party {
+  padding: 130px 0;
+  background: var(--black);
+  color: var(--white);
+}
+
+.party-container {
+  width: 90%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+.party-header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.party-header > p:first-child {
+  color: var(--baby-yellow);
+  font-size: 10px;
+  letter-spacing: 5px;
+}
+
+.party-header h2 {
+  margin-top: 15px;
+  font-family: var(--heading-font);
+  font-size: clamp(70px, 9vw, 115px);
+  font-weight: 300;
+  line-height: 0.8;
+}
+
+.party-header h2 span {
+  display: block;
+  color: var(--baby-yellow);
+  font-style: italic;
+}
+
+.party-intro {
+  max-width: 450px;
+  margin: 35px auto 0;
+
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+/* ==============================
+   GROUP
+============================== */
+
+.party-group {
+  margin-bottom: 100px;
+}
+
+.party-group:last-child {
+  margin-bottom: 0;
+}
+
+.party-group-title {
+  margin-bottom: 40px;
+}
+
+.party-group-title span {
+  color: var(--gold);
+  font-size: 8px;
+  letter-spacing: 4px;
+}
+
+.party-group-title h3 {
+  margin-top: 10px;
+
+  font-family: var(--heading-font);
+  font-size: 48px;
+  font-weight: 300;
+}
+
+/* ==============================
+   PARTY GRID
+============================== */
+
+.party-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* ==============================
+   IMAGE
+============================== */
+
+.party-image {
+  position: relative;
+
+  height: 420px;
+
+  overflow: hidden;
+
+  background: #171717;
+}
+
+.party-image img {
+  width: 100%;
+  height: 100%;
+
+  /*
+    IMPORTANT:
+    This makes the image show the upper
+    part of the photograph instead of
+    centering on the body.
+  */
+  object-fit: cover;
+  object-position: center 20%;
+
+  filter: grayscale(100%);
+
+  transition:
+    transform 0.7s ease,
+    filter 0.7s ease;
+}
+
+.party-card:hover .party-image img {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+}
+
+/*
+  If the face is still slightly too low,
+  you can change 20% to 10%.
+
+  Examples:
+
+  object-position: center 10%;
+  = moves the visible area further upward
+
+  object-position: center 30%;
+  = shows slightly more of the middle
+*/
+
+/* ==============================
+   NUMBER
+============================== */
+
+.party-image > span {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  font-family: var(--heading-font);
+  font-size: 18px;
+
+  color: var(--baby-yellow);
+
+  z-index: 2;
+}
+
+/* ==============================
+   PARTY INFORMATION
+============================== */
+
+.party-info {
+  padding: 20px 0 0;
+}
+
+.party-info small {
+  display: block;
+
+  color: var(--gold);
+
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.party-info h4 {
+  margin-top: 5px;
+
+  font-family: var(--heading-font);
+  font-size: 27px;
+  font-weight: 400;
+
+  line-height: 1.1;
+}
+
+/* ==============================
+   PERSONAL MESSAGE
+============================== */
+
+.party-message {
+  max-width: 340px;
+
+  margin-top: 12px;
+
+  color: rgba(255, 255, 255, 0.52);
+
+  font-size: 11px;
+  line-height: 1.8;
+
+  font-weight: 300;
+}
+
+/* Small decorative line */
+.party-message::before {
+  content: "";
+
+  display: block;
+
+  width: 28px;
+  height: 1px;
+
+  margin-bottom: 12px;
+
+  background: var(--baby-yellow);
+
+  opacity: 0.7;
+}
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 800px) {
+
+  .party-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .party-image {
+    height: 350px;
+  }
+
+  .party-image img {
+    object-position: center 18%;
+  }
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 550px) {
+
+  .wedding-party {
+    padding: 90px 0;
+  }
+
+  .party-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .party-image {
+    height: 450px;
+  }
+
+  .party-image img {
+    object-position: center 15%;
+  }
+
+  .party-message {
+    max-width: 100%;
+  }
+}

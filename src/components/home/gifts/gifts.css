@@ -1,0 +1,132 @@
+.gifts {
+  padding: 130px 0;
+
+  background: var(--soft-yellow);
+}
+
+.gifts-container {
+  width: 90%;
+  max-width: 900px;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+.gifts-eyebrow {
+  color: var(--gold);
+
+  font-size: 9px;
+  letter-spacing: 5px;
+}
+
+.gifts h2 {
+  margin-top: 18px;
+
+  font-family: var(--heading-font);
+
+  font-size: clamp(55px, 7vw, 85px);
+
+  font-weight: 300;
+
+  line-height: .9;
+}
+
+.gifts h2 span {
+  display: block;
+
+  color: #77736a;
+
+  font-style: italic;
+}
+
+.gifts-intro {
+  max-width: 450px;
+
+  margin: 35px auto 60px;
+
+  color: var(--muted);
+
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.gift-options {
+  border-top: 1px solid rgba(17,17,17,.15);
+}
+
+.gift-option {
+  display: grid;
+
+  grid-template-columns: 70px 1fr auto;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 30px 0;
+
+  text-align: left;
+
+  border-bottom: 1px solid rgba(17,17,17,.15);
+}
+
+.gift-option > span {
+  font-family: var(--heading-font);
+
+  color: var(--gold);
+  font-size: 18px;
+}
+
+.gift-option small {
+  color: var(--gold);
+
+  font-size: 7px;
+  letter-spacing: 3px;
+}
+
+.gift-option h3 {
+  margin-top: 5px;
+
+  font-family: var(--heading-font);
+
+  font-size: 32px;
+
+  font-weight: 400;
+}
+
+.gift-option button {
+  padding: 12px 20px;
+
+  border: 1px solid var(--black);
+
+  background: transparent;
+
+  font-size: 8px;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  transition: .3s ease;
+}
+
+.gift-option button:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+@media(max-width:600px) {
+
+  .gifts {
+    padding: 90px 0;
+  }
+
+  .gift-option {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .gift-option button {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
