@@ -8,6 +8,7 @@ const DressCode = () => {
       <div className="dress-code-container">
 
         <div className="dress-code-header">
+
           <p>COME DRESSED TO CELEBRATE</p>
 
           <h2>
@@ -16,64 +17,57 @@ const DressCode = () => {
           </h2>
 
           <p className="dress-code-intro">
-            We're keeping the celebration elegant,
-            timeless and joyful.
+            Come as you are, feel comfortable,
+            and celebrate with us in your own style.
           </p>
+
         </div>
+
 
         <div className="dress-code-grid">
 
           <div className="dress-card">
-            <div className="dress-card-number">01</div>
 
-            <div className="dress-symbol">♀</div>
+            <div className="dress-card-number">
+              01
+            </div>
 
-            <p>LADIES</p>
+            <div className="dress-symbol">
+              ✦
+            </div>
+
+            <p>EVERYONE</p>
 
             <h3>
-              Elegant
-              <em>Formal Wear</em>
+              Free
+              <em>or African Attire</em>
             </h3>
 
             <div className="dress-line"></div>
 
             <span>
-              Long dresses, elegant gowns,
-              sophisticated accessories and
-              comfortable shoes for celebrating
-              throughout the evening.
+              There is no strict dress code.
+              Wear something that makes you
+              feel comfortable and confident,
+              or celebrate with us in beautiful
+              African attire.
             </span>
-          </div>
 
-          <div className="dress-card dark">
-            <div className="dress-card-number">02</div>
-
-            <div className="dress-symbol">♂</div>
-
-            <p>GENTLEMEN</p>
-
-            <h3>
-              Classic
-              <em>Formal Wear</em>
-            </h3>
-
-            <div className="dress-line"></div>
-
-            <span>
-              Suits, formal shirts, polished shoes
-              and classic accessories are warmly
-              encouraged.
-            </span>
           </div>
 
         </div>
 
+
         <div className="dress-note">
+
           <span>STYLE NOTE</span>
+
           <p>
-            Neutral tones, soft yellow accents and
-            classic black are especially welcome.
+            Come comfortable, come joyful,
+            and most importantly, come ready
+            to celebrate Rose & Ted.
           </p>
+
         </div>
 
       </div>

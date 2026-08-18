@@ -45,24 +45,19 @@
 }
 
 .dress-code-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .dress-card {
-  position: relative;
-
-  min-height: 500px;
-  padding: 65px 55px;
-
-  background: var(--soft-yellow);
+  width: 100%;
+  max-width: 620px;
 }
 
-.dress-card.dark {
+/* .dress-card.dark {
   background: var(--black);
   color: var(--white);
-}
+} */
 
 .dress-card-number {
   position: absolute;
