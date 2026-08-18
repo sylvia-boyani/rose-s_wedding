@@ -22,7 +22,7 @@ const Location = () => {
 
         <div className="location-details">
 
-          <h3>KWS-Kisumu Impala Sanctuary</h3>
+          <h3>Shekinah Gardens Kisumu</h3>
 
           <p>
             Kisumu, Kenya
@@ -37,7 +37,7 @@ const Location = () => {
         </div>
 
         <a
-          href="https://www.google.com/maps/search/?api=1&query=KWS-Kisumu+Impala+Sanctuary"
+          href="https://maps.app.goo.gl/yAfSsfn64zHGy9XG9"
           target="_blank"
           rel="noreferrer"
           className="location-button"
@@ -55,7 +55,7 @@ const Location = () => {
       <div className="location-map">
 
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d332111.2666675215!2d34.51411244268799!3d-0.07638375045220104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa4cc8c7921ef%3A0x523286ab2730496a!2sKWS-Kisumu%20Impala%20Sanctuary!5e0!3m2!1sen!2ske!4v1786976563476!5m2!1sen!2ske"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8159460277975!2d34.79975377486002!3d-0.06250723551268758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa3317dde1b85%3A0x37a35d13eae7360e!2sShekinah%20Gardens!5e0!3m2!1sen!2ske!4v1787050456758!5m2!1sen!2ske"
           width="100%"
           height="100%"
           style={{ border: 0 }}
